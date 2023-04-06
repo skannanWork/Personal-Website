@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebfbb944c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container1">
+        <nav>
+            <!-- <img src="" alt="logo"> -->
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#personalproject">Personal Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Shyam</span><br>Kannan From California</h1>
+        </div>
+    </div>
+</div>
+<!-- ----------about-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title1">About Me</h1>
+                <p>Hi! My name is Shyam Kannan. I live in the Bay Area, and just graduated from Arizona State University with a bachelors of science in Computer Science. 
+                    I began learning computer science around middle school, and have stuck with it ever since. I enjoy showcasing my creativity and problem solving skills through projects, 
+                    both at school and in my free time 
+                    <p><br> I've also had the opportunity to take part in 3 internships over the past 4 years, where I've learned how to train models, design websites, as well as do quality asssurance testing. I am now looking for a full time job where I can put these skills to use</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "education">
+                        <ul>
+                            <li><span>Arizona State University (2019-2022)</span><br>Bachelor of Arts in Computer Science</li>
+                            <li><span>Cupertino High School (2016-2019)</span><br>High School Diploma</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul class = "roman">
+                            <li><span>Software Development Intern (June 2019 – August 2019)</span><br> Qeagle Assurance Private Limited</li>
+                            <ul class = "square">
+                                <li>Performed quality assurance software testing and data analytics on their website to suggest various improvements
+                                    and modifications that would better serve the business owners’ interests</li>
+                                <li>Took on the task of building the different components of the website using HTML and CSS</li>
+                            </ul>
+    
+                            <li><span>Artificial Intelligence Intern (June 2021 – August 2021)</span><br> Kashmir World Foundation</li>
+                            <ul class = "square">
+                                <li>Worked on autonomous navigation algorithms aimed to monitor the endangered species of snow leopards using deep
+                                    learning and computer vision</li>
+                                <li>Streamlined image filtering process and analyzed images suitable for training AI Model(YOLO) to detect animals</li>
+                                <li>Mapped and interpreted images to the corresponding animal species, facilitating the training of AI model</li>
+                                <li>Ran python scripts on Google Colab to train the model with animal image data</li>
+                            </ul>
+                            <li><span>Software Engineer Intern (June 2022 – August 2022)</span><br> TestLeaf Software Solutions Private Limited</li>
+                            <ul class = "square">
+                                <li>Was part of the test automation team that designed the web automation scripts using WebDriver</li>
+                                <li>Developed and executed tests for chrome, firefox</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------skills-------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title2">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <img src="images/Python.png">
+                <h2>PYTHON</h2>
+                <p>I have been working with python 3 years and have worked on a diverse range of projects that have allowed me to sharpen my skills </p>
+            </div>
+            <div>
+                <img src="images/java.png">
+                <h2>JAVA</h2>
+                <p>I have been working with Java for 4 years and can use it to develop apps as well as well as games such as text adventure</p>
+            </div>
+            <div>
+                <img src="images/html.png">
+                <h2>HTML/CSS</h2>
+                <p>I have been working with HTML for 2 years and can use it to develop a variety of websites all styled to fit a certain niche</p>
+            </div>
+            <div>
+                <img src="images/c++.png">
+                <h2>C++</h2>
+                <p>I have been proficient in utilizing C++ for the past 3 years for various projects, including game programming on the Unreal Game Engine </p>
+            </div>
+            <div>
+                <img src="images/database.png">
+                <h2>SQL</h2>
+                <p>Over the past year, I've used SQL to manage databases using mySQL as well as MongoDB</p>
+            </div>
+            <div>
+                <img src="images/swift.png">
+                <h2>SWIFT</h2>
+                <p>For the past two years, I have been developing mobile apps with Swift using Xcode and hope to one day publish an app to the app store</p>
+            </div>
+            <div>
+                <img src="images/hashC.png">
+                <h2>C#</h2>
+                <p>I am currently expanding my skillset by working with C#, specifically for deploying web services and REST APIs</p>
+            </div>
+            <div>
+                <img src="images/machine-learning.png">
+                <h2>MACHINE LEARNING</h2>
+                <p>Currently expanding my machine learning knowledge so that I can effectively analyze and identify patterns in data as well as be able to recognize images</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="personalproject">
+    <div class="container">
+        <h1 class="sub-title3">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/amazonPriceNotifier.png">
+                <div class="layer">
+                    <h3>Amazon Price Notifier</h3>
+                    <p>This program sends a GET request to the specified Amazon page, parses the HTML content using BeautifulSoup, and finds the price of the item. It then compares the price to a threshold price that you specify, and if the price is below the threshold, it sends an email notification to your email address</p>
+                    <!-- <a href="#">GitHub</a> -->
+                    <a href="https://github.com/skannanWork/Amazon-Price-Notifier" class = "btnTwo">GitHub</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/resale.png">
+                <div class="layer">
+                    <h3>Resale Marketplace</h3>
+                    <p>An IOS mobile application built using Xcode and swift that allows users to buy and sell different type of products such as clothes and shoes.
+                        Features a home page, categories tab, favorites tab, an add item tab, and a settings tab</p>
+                    <a href="https://github.com/skannan240/ResellMarketPlaceApp" class = "btnTwo">GitHub</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/betterHangman.png">
+                <div class="layer">
+                    <h3>Hangman</h3>
+                    <p>This is a program coded in python that algorithmically attempt to solve hangman by itself. To start, choose a dictionary of words to use for the game. In this case, the words module from the nltk library was used. A text file containing all the words is also a viable option</p>
+                    <a href="https://github.com/skannanWork/Hangman" class = "btnTwo">GitHub</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/century.png">
+                <div class="layer">
+                    <h3>Web-Scraping Algorithm for Real Estate</h3>
+                    <p>Used beautiful soup library to collect and store data from real estate website century21. The Data collected was organized into excel using PANDAS</p>
+                    <a href="https://github.com/skannan240/Real-estate-webscraping" class = "btnTwo">GitHub</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sqlContact.png">
+                <div class="layer">
+                    <h3>Contact Storage App</h3>
+                    <p>This program connects to the sqlite library and allows a user to add, update, delete, or search for a contact within a database. All of these can be accessed within the user interface at any given time</p>
+                    <a href="https://github.com/skannanWork/Contact-storage-app" class = "btnTwo">GitHub</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/netflixWebscrape.png">
+                <div class="layer">
+                    <h3>Netflix Webscraping</h3>
+                    <p>This program loads your Netflix data from a JSON file, extracts the list of movies and TV shows, and calculates various statistics such as the total number of movies and TV shows, the total runtime, and the average rating </p>
+                    <a href="https://github.com/skannanWork/Netflix-Webscraping" class = "btnTwo">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class = "btn">See more</a> -->
+    </div>
+</div>
+<!-- ---------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> shyamwork2000@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 408-872-2829</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shyam-kannan-sde/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/skannan240"><i class="fa-brands fa-github"></i></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/Shyam_Final_Resume.pdf" download class="btn btn2">Download My Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023 by Shyam Kannan</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyb7ZxkyJpLCc6JzaDktZSgstxrkIJoafBQoiQ-dQ0EQVMhw5uwscqUuoqAHrxdM2aH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
